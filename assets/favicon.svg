@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0b0d0c"/>
+  <g fill="none" stroke="#3df2b0" stroke-width="4" stroke-linecap="square">
+    <path d="M10 22V10h12M42 10h12v12M54 42v12H42M22 54H10V42"/>
+  </g>
+  <text x="32" y="40" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="700" fill="#ecefec">MB</text>
+</svg>

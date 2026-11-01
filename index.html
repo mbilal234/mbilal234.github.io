@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Bilal</title>
+  <meta name="description" content="Muhammad Bilal: ML and software engineer, Fulbright Scholar and MS Computer Vision student at Northeastern University. Ships end-to-end AI systems: computer vision, RAG platforms, data pipelines and full-stack products.">
+  <meta property="og:title" content="Muhammad Bilal | ML & Software Engineer">
+  <meta property="og:description" content="Fulbright Scholar, MS Computer Vision at Northeastern. Builds end-to-end AI systems.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <canvas id="vision" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Home"><span class="bracket">MB</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <svg class="sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+      <svg class="moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow mono"><span class="dot"></span> Open to part-time co-ops · Jan – Jul 2027 · Boston</p>
+      <h1>
+        <span class="detect" data-label="ml_engineer 0.99">Muhammad Bilal</span>
+      </h1>
+      <p class="lede">
+        Software engineer and technical lead who ships <strong>end-to-end AI systems</strong>: computer vision on live video,
+        multilingual RAG platforms, real-time data pipelines and full-stack products for enterprise clients.
+      </p>
+      <p class="sub">
+        Fulbright Scholar · MS in Computer Vision at <strong>Northeastern University</strong> ·
+        Gordon Institute of Engineering Leadership
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="assets/Muhammad_Bilal_Resume.pdf" target="_blank" rel="noopener">
+          Download resume
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn" href="mailto:bilal.muha@northeastern.edu">Email me</a>
+        <a class="btn ghost" href="https://github.com/mbilal234" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://linkedin.com/in/muhammad-bilal-8559951bb" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <dl class="stats">
+        <div><dt>4.0 / 4.0</dt><dd>CGPA, BS Software Engineering</dd></div>
+        <div><dt>Gold Medal</dt><dd>President's Gold Medal, NUST</dd></div>
+        <div><dt>ICED 2025</dt><dd>Peer-reviewed publication</dd></div>
+        <div><dt>J-1</dt><dd>Off-campus work authorized</dd></div>
+      </dl>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about reveal" aria-labelledby="about-h">
+      <h2 id="about-h" class="section-title"><span class="mono idx">00</span> About</h2>
+      <div class="about-grid">
+        <p>
+          I like building the whole system, not just the model. My work spans computer vision that has to stay stable when
+          real-world lighting and sensor noise get in the way, neural inverse kinematics for robotic arm control, retrieval-augmented
+          generation for enterprise AI, and the backend pipelines, dashboards and microservices that make ML useful to the people
+          relying on it.
+        </p>
+        <p>
+          I've led small engineering teams on several shipped products, worked on enterprise systems for SharkNinja at GoSaaS,
+          and published research from my MITACS Globalink internship in Montréal. I'm now pursuing an MS in Computer Vision at
+          Northeastern and looking for a part-time engineering role (up to 20 hrs/week) through July 2027.
+        </p>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="reveal" aria-labelledby="work-h">
+      <h2 id="work-h" class="section-title"><span class="mono idx">01</span> Selected work</h2>
+
+      <div class="cards">
+        <article class="card" data-label="rag_platform 0.98">
+          <div class="card-head">
+            <span class="mono kicker">Technical Team Lead · MHTechFusion</span>
+            <h3>Cradle AI</h3>
+          </div>
+          <p>An enterprise-grade AI governance platform. I led development of its custom <strong>multilingual RAG engine</strong> and dedicated web interface.</p>
+          <ul class="tags mono"><li>RAG</li><li>LLM integration</li><li>Multilingual</li><li>Web platform</li></ul>
+        </article>
+
+        <article class="card" data-label="cv_system 0.97">
+          <div class="card-head">
+            <span class="mono kicker">Technical Team Lead · MHTechFusion</span>
+            <h3>Splatoon AI</h3>
+          </div>
+          <p>An AI research project that analyzed <strong>live game video feeds with computer vision</strong> to drive aiming, movement and AI-teammate models. The hard part was robustness: I worked through edge cases where real-world lighting changes and sensor noise made inference unstable.</p>
+          <ul class="tags mono"><li>Computer vision</li><li>Live video</li><li>Robustness</li></ul>
+        </article>
+
+        <article class="card" data-label="realtime_app 0.96">
+          <div class="card-head">
+            <span class="mono kicker">Technical Team Lead · MHTechFusion</span>
+            <h3>RTTA: Real-Time Translation App</h3>
+          </div>
+          <p>An iOS application performing <strong>real-time, low-latency audio translation</strong> during live calls. I led the architecture.</p>
+          <ul class="tags mono"><li>Real-time audio</li><li>Low latency</li><li>iOS</li></ul>
+        </article>
+
+        <article class="card" data-label="product 0.95">
+          <div class="card-head">
+            <span class="mono kicker">Software Engineer · GoSaaS Inc.</span>
+            <h3>GoCAD</h3>
+          </div>
+          <p>A full-stack application that streamlines workflows between CAD tools and Oracle PLM. I built cross-platform <strong>ElectronJS</strong> desktop interfaces on a microservices architecture and centralized, scalable logging microservices with Docker.</p>
+          <ul class="tags mono"><li>ElectronJS</li><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Docker</li></ul>
+        </article>
+
+        <article class="card" data-label="research 0.94">
+          <div class="card-head">
+            <span class="mono kicker">MITACS Globalink · ÉTS Montréal</span>
+            <h3>Graph-based data modeling platform</h3>
+          </div>
+          <p>A full-stack web platform for dynamic, <strong>graph-based data modeling</strong>. Its architecture and platform design became a peer-reviewed paper at ICED 2025.</p>
+          <ul class="tags mono"><li>React</li><li>Node.js</li><li>Neo4j</li><li>Published</li></ul>
+        </article>
+
+        <article class="card" data-label="robotics 0.93">
+          <div class="card-head">
+            <span class="mono kicker">Robotics · NUST</span>
+            <h3>Neural inverse kinematics</h3>
+          </div>
+          <p>Neural-network-based <strong>inverse kinematics for robotic arm control</strong>: learning the mapping from a target position to joint angles instead of solving it analytically.</p>
+          <ul class="tags mono"><li>Robotics</li><li>Neural networks</li><li>Control</li></ul>
+        </article>
+      </div>
+
+      <h3 class="subhead mono">More on GitHub</h3>
+      <div class="repos">
+        <a class="repo" href="https://github.com/mbilal234/IoT-basedFactoryMonitoringSystem" target="_blank" rel="noopener">
+          <span class="repo-name">Smart Factory Monitoring</span>
+          <span class="repo-desc">ESP32 system that collects temperature, humidity, motion and vibration data in real time, streams it to ThingSpeak dashboards, and drives actuators. FreeRTOS multitasking, deep-sleep power optimization. Team project.</span>
+          <span class="repo-meta mono">C++ · IoT · Sensors</span>
+        </a>
+        <a class="repo" href="https://github.com/mbilal234/HumanBodyMeasurementPredictor" target="_blank" rel="noopener">
+          <span class="repo-name">Human Body Measurement Predictor</span>
+          <span class="repo-desc">ML pipeline that predicts 14 human body measurements, including height, from images. It has to cope with variation in anatomy, pose, lighting and image noise.</span>
+          <span class="repo-meta mono">Python · Computer vision · ML</span>
+        </a>
+        <a class="repo" href="https://github.com/mbilal234/tawazun" target="_blank" rel="noopener">
+          <span class="repo-name">Tawazun</span>
+          <span class="repo-desc">Local-first desktop finance tracker with analytics, CSV import/export and nine themes. Windows and macOS installers.</span>
+          <span class="repo-meta mono">Electron · React · TypeScript</span>
+        </a>
+        <a class="repo" href="https://github.com/mbilal234/SubterraneanNuclearSignalDetector" target="_blank" rel="noopener">
+          <span class="repo-name">Subterranean Signal Detector</span>
+          <span class="repo-desc">Fourier-transform analysis of seismic signals to tell underground explosions apart from natural earthquakes by their frequency content.</span>
+          <span class="repo-meta mono">Python · Signal processing · FFT</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="reveal" aria-labelledby="exp-h">
+      <h2 id="exp-h" class="section-title"><span class="mono idx">02</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when mono">Sep 2026 – 2028</div>
+          <div class="what">
+            <h3>MS, Electrical &amp; Computer Engineering (Computer Vision)</h3>
+            <p class="org">Northeastern University, Boston · Fulbright Scholar · Gordon Institute of Engineering Leadership</p>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Dec 2024 – Aug 2026</div>
+          <div class="what">
+            <h3>Technical Team Lead &amp; Developer (Freelance)</h3>
+            <p class="org">MHTechFusion</p>
+            <p>Led Cradle AI, Splatoon AI and RTTA. Before that, built full-stack web applications and secure, data-driven dashboards with React, Node.js, PostgreSQL and Supabase.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Jun 2025 – Aug 2026</div>
+          <div class="what">
+            <h3>Software Engineer</h3>
+            <p class="org">GoSaaS Inc. · Client: SharkNinja</p>
+            <p>Designed and maintained enterprise workflows using Oracle OIC, ATP, APEX and VBCS for SharkNinja's Finance and Inventory modules. On the product team, engineered GoCAD.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Oct 2024 – Jun 2025</div>
+          <div class="what">
+            <h3>Research Assistant</h3>
+            <p class="org">ROMI Lab, NUST</p>
+            <p>Designed backend pipelines and web interfaces to visualize real-time system outputs and optimize scalable design.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Jun 2024 – Sep 2024</div>
+          <div class="what">
+            <h3>MITACS Globalink Research Intern</h3>
+            <p class="org">École de technologie supérieure (ÉTS), Montréal</p>
+            <p>Built a graph-based data modeling platform (React, Node.js, Neo4j); published at ICED 2025.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when mono">Graduated Jun 2025</div>
+          <div class="what">
+            <h3>BS, Software Engineering</h3>
+            <p class="org">National University of Sciences and Technology (NUST) · CGPA 4.0/4.0 · 1st in class</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="skills">
+        <div><h4 class="mono">AI &amp; Computer Vision</h4><p>Python · TensorFlow/Keras · OpenCV · YOLOv8 · RAG engines · LLM integration</p></div>
+        <div><h4 class="mono">Full-Stack</h4><p>React · Node.js · Express.js · ElectronJS · REST APIs · microservices</p></div>
+        <div><h4 class="mono">Data</h4><p>SQL · PostgreSQL · MongoDB · Supabase · Neo4j</p></div>
+        <div><h4 class="mono">Cloud &amp; Enterprise</h4><p>Docker · AWS · CI/CD · Git · Oracle (OIC, ATP, APEX, VBCS)</p></div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section id="recognition" class="reveal" aria-labelledby="rec-h">
+      <h2 id="rec-h" class="section-title"><span class="mono idx">03</span> Publication &amp; honors</h2>
+      <div class="pub">
+        <span class="mono kicker">Peer-reviewed · 2025</span>
+        <p>Research published at <strong>ICED 2025</strong>, the International Conference on Engineering Design, based on the architecture and platform design of the graph-based modeling system I built at ÉTS Montréal.</p>
+      </div>
+      <ul class="honors">
+        <li><strong>Fulbright Scholarship</strong><span>Graduate study in the U.S., Northeastern University, 2026</span></li>
+        <li><strong>President's Gold Medal</strong><span>NUST, 1st position, BS Software Engineering</span></li>
+        <li><strong>MITACS Globalink Research Grant</strong><span>Fully funded research internship, Canada</span></li>
+        <li><strong>Prime Minister's Laptop Award</strong><span>Top 20 students nationwide</span></li>
+        <li><strong>Leadership</strong><span>Final Year Project Team Lead (2024–25) · Deputy Director, NUST Archery Club · Executive, NUST Leadership Society</span></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal" aria-labelledby="contact-h">
+      <h2 id="contact-h"><span class="detect small" data-label="next_step 1.00">Let's build something.</span></h2>
+      <p>I'm looking for a <strong>part-time engineering role (up to 20 hrs/week) running through July 2027</strong> in the Boston area. My J-1 (Fulbright) off-campus work authorization is approved, so no visa sponsorship is needed. The work can also serve as my Gordon Institute Challenge Project, which comes with Northeastern faculty and mentor support at no cost to the company.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:bilal.muha@northeastern.edu">bilal.muha@northeastern.edu</a>
+        <a class="btn ghost" href="https://linkedin.com/in/muhammad-bilal-8559951bb" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="assets/Muhammad_Bilal_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mono">
+    <span>© <span id="year">2026</span> Muhammad Bilal</span>
+    <span>Boston, MA</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
