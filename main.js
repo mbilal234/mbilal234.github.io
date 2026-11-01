@@ -1,16 +1,10 @@
-// Theme toggle, scroll reveal, and the "vision grid" background: a faint grid with a few
-// detection boxes that drift, lock on, and relabel, a quiet nod to object detection.
+// Scroll reveal and the "vision grid" background: a faint grid with a few detection boxes
+// that drift, lock on, and relabel, a quiet nod to object detection.
 (function () {
   const root = document.documentElement;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  root.classList.add('js'); // sections only start hidden once this script is running
 
-  // ---------- theme ----------
-  const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-  document.getElementById('themeToggle').addEventListener('click', () => {
-    const next = isDark() ? 'light' : 'dark';
-    root.dataset.theme = next;
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // ---------- reveal on scroll ----------
@@ -18,7 +12,7 @@
   if ('IntersectionObserver' in window && !reduceMotion) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.08 });
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' }); // any part in view: tall sections on short screens never reach a ratio
     reveals.forEach((el) => io.observe(el));
   } else {
     reveals.forEach((el) => el.classList.add('in'));
